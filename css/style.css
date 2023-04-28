@@ -10,6 +10,8 @@
   --border-btn-color: #e7e9fc;
   --navy-blue-bg-color: #2e2f42;
   --border-icon-color: #8e8f99;
+  --white-color: #ffffff;
+  --green-accent-color: #31d0aa;
 }
 /* Style color  */
 /* /* основной цвет #434455  */
@@ -67,6 +69,8 @@ img {
 /* HEADER  */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .page-header-container {
   display: flex;
@@ -162,7 +166,6 @@ img {
 }
 .overlay {
   max-width: 1440px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -172,6 +175,7 @@ img {
     ),
     url(../images/hero/people-office.jpg);
   background-position: center;
+  background-size: cover;
 }
 /* Section 1 */
 .section {
@@ -234,6 +238,7 @@ img {
 }
 .profession {
   color: var(--primery-text-color);
+  margin-bottom: 8px;
 }
 .section.team {
   background-color: var(--cloud-text-color);
@@ -251,6 +256,28 @@ img {
 .customers {
   padding-top: 120px;
 }
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--blue-nomal-color);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--blue-accent-color);
+}
+.social-list-icon {
+  fill: var(--white-color);
+}
+
 /* Section-4-Customers  */
 
 .client-list {
@@ -262,6 +289,18 @@ img {
   flex-basis: calc((100% - 120px) / 6);
 }
 
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+  fill: var(--blue-accent-color);
+}
+.client-icon {
+  display: block;
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--border-icon-color);
+  border-radius: 4px;
+  fill: var(--border-icon-color);
+}
 /* Footer  */
 .footer {
   background-color: var(--navy-blue-bg-color);
@@ -284,6 +323,22 @@ img {
 .footer .text {
   color: var(--cloud-text-color);
   width: 264px;
+}
+.footer-title {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--white-text-color);
+  margin-bottom: 16px;
+}
+.container-block {
+  display: flex;
+}
+.left-block {
+  margin-right: 120px;
+}
+.footer .social-list-link:hover,
+.footer .social-list-link:focus {
+  background-color: var(--green-accent-color);
 }
 
 /* Section Portfolio  */
@@ -394,13 +449,7 @@ img {
   width: 264px;
   height: 112px;
 }
-.button-client-icon {
-  display: block;
-  width: 168px;
-  height: 88px;
-  border: 1px solid var(--border-icon-color);
-  border-radius: 4px;
-}
+
 .text {
   color: var(--primery-text-color);
 }
