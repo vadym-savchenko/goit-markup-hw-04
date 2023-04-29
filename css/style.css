@@ -324,9 +324,8 @@ img {
 .client-icon {
   display: block;
   fill: currentColor;
-  height: 88px;
-  width: 168px;
 }
+
 /* Footer  */
 .footer {
   background-color: var(--navy-blue-bg-color);
