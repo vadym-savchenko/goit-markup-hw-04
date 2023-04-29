@@ -315,8 +315,8 @@ img {
   width: 100%;
   height: 100%;
 }
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
+.client-link:hover,
+.client-link:focus {
   color: #404bbf;
   border: 1px solid var(--blue-accent-color);
   border-color: #404bbf;
