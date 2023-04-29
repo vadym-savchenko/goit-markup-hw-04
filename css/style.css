@@ -224,7 +224,7 @@ img {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
@@ -317,8 +317,9 @@ img {
 }
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
-  color: var(--blue-accent-color);
+  color: #404bbf;
   border: 1px solid var(--blue-accent-color);
+  border-color: #404bbf;
 }
 .client-icon {
   display: block;
